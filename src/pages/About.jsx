@@ -2,7 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>About</div>
+    <section className='h-screen flex items-center justify-center'>
+        <div className='text-white '>About</div>
+
+    </section>
+    
   )
 }
 
