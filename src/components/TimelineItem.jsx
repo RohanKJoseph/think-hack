@@ -21,7 +21,7 @@ const TimelineItem = ({ date, title, description, position }) => {
       <div className="hidden md:block w-5/12"></div>
 
  
-      <div className="z-10 flex items-center bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+      <div className="z-10 flex items-center bg-purple-500 shadow-xl w-5 h-5 rounded-full">
         <div className="w-4 h-4 bg-white rounded-full mx-auto"></div>
       </div>
       

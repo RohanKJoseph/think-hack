@@ -1,6 +1,6 @@
  import React from 'react';
 import { motion } from 'framer-motion';
-import TimelineItem from './TimelineItem.jsx';
+import TimelineItem from '../components/TimelineItem.jsx';
 
  
 const timelineData = [

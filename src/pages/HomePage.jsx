@@ -1,6 +1,7 @@
 import React from 'react';
-import Timeline from '../components/TimeLine';
+import Timeline from './TimeLine.jsx';
 import AboutSection from './About.jsx';
+import Prize from './Price.jsx';
 
 const HomePage = () => {
   return (
@@ -15,6 +16,9 @@ const HomePage = () => {
       </div>
       <div>
         <Timeline />
+      </div>
+      <div>
+        <Prize />
       </div>
     </div>
   );

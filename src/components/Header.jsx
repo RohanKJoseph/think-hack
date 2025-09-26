@@ -23,6 +23,9 @@ function Header() {
                 <a href="/#timeline" className="hover:text-blue-300 transition-colors">Timeline</a>
             </li>
             <li>
+              <a href="/#price" className="hover:text-blue-300 transition-colors">Prizes</a>
+            </li>
+            <li>
               <a href="/#contact" className="hover:text-blue-300 transition-colors">Contact</a>
             </li>
           </ul>
