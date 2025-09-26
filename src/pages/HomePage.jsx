@@ -1,53 +1,35 @@
 import React from 'react';
-import Header from '../components/Header';
-import About from './About';
-import PixelBlast from '../styles/body-bg.jsx';
+
+// The content for your "About" section
+const AboutSection = () => (
+  <section id="about" className='h-screen bg-black flex flex-col items-center justify-center p-4'>
+    <div className='text-center'>
+      <h3 className='text-white text-4xl font-bold mb-8'>
+        About Tink Hack 2.0
+      </h3>
+      <div className='max-w-2xl mx-auto bg-gray-900/50 backdrop-blur-sm rounded-lg p-6'>
+        <p className='text-gray-200 text-lg leading-relaxed'>
+          TinkerHub MEC's overnight Hackathon, Kerala's inaugural AI-based event, promotes student expertise and explores Generative AI. This innovative platform unites technology and innovation, fostering diverse solutions in various fields.
+        </p>
+      </div>
+    </div>
+  </section>
+);
 
 const HomePage = () => {
   return (
-    <div className='bg-black'>
-      
- 
-      <div className="fixed inset-0 z-0 h-full">
-        <PixelBlast
-          variant="circle"
-          pixelSize={6}
-          color="#B19EEF"
-          patternScale={3}
-          patternDensity={1.2}
-          pixelSizeJitter={0.5}
-          enableRipples={true}
-          liquid={true}
-          rippleSpeed={0.4}
-          rippleThickness={0.12}
-          rippleIntensityScale={1.5}
-          liquidStrength={0.12}
-          liquidRadius={1.2}
-          liquidWobbleSpeed={5}
-          speed={0.6}
-          edgeFade={0.25}
-          transparent
-        />
+    // pointer-events-auto is needed here to allow scrolling the page
+    <div className="pointer-events-auto">
+      {/* --- HERO SECTION --- */}
+      <div className="h-screen flex items-center justify-center">
+        <h1 className='text-white text-5xl font-bold text-center'>
+          Tink Hack 2.0
+        </h1>
       </div>
- 
-      <div className="relative z-10 pointer-events-none">  
       
-        <div className="pointer-events-auto">
-          <Header /> 
-        </div>
-        
-        <div className="h-screen flex items-center justify-center">
-          <h1 className='text-white text-5xl font-bold text-center'>
-            Think Hack 2.0
-          </h1>
-        </div>
-
-        <div className="pointer-events-auto">
-          <About />
-        </div>
-
-      </div>
-
+      {/* --- ABOUT SECTION --- */}
+      {/* The About content is now part of the HomePage */}
+      <AboutSection />
     </div>
   );
 };
