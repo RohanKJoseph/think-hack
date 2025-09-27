@@ -1,4 +1,5 @@
 import React from 'react';
+import GradientText from '../styles/GradientText';
 
 function Header() {
   return (
@@ -6,9 +7,16 @@ function Header() {
       
       <div className="container mx-auto flex items-center justify-between">
         <a href="/" className="text-white text-xl">
-          <span className="font-bold">Tinker</span>
-          <span className="font-light">Hub</span>
-          <span className="block text-xs font-semibold">MEC</span>
+        <GradientText
+                         colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                         animationSpeed={3}
+                         showBorder={false}
+                         className="custom-class">
+                            <span className="font-bold">Tinker</span>
+                            <span className="font-light">Hub</span>
+                            <span className="block text-xs font-semibold">MEC</span>
+                        </GradientText>
+          
         </a>
 
         <nav>
