@@ -188,7 +188,7 @@ export default function App() {
     <div className="bg-gray-900 text-white min-h-screen flex items-center justify-center font-sans">
       <div className="container mx-auto px-4 text-center">
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-gray-100 leading-tight">
-          Think Hack
+          Tink Hack
           <br className="sm:hidden" />
           <span className="text-indigo-400 ml-3">
              <RotatingText texts={rotatingAdjectives} />
