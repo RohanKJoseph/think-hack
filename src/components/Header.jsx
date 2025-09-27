@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import GradientText from '../styles/GradientText';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ function Header() {
     } else {
       document.body.style.overflow = 'auto';
     }
-    // Cleanup function
+    
     return () => {
       document.body.style.overflow = 'auto';
     };
@@ -22,8 +23,8 @@ function Header() {
     <header className="fixed top-0 left-0 w-full p-4 z-50">  
       <div className="container mx-auto flex items-center justify-between">
         
-        {/* Logo */}
-        <a href="/" className="text-white text-xl">
+       
+        <a href="/#home" className="text-white text-xl">
           <GradientText
             colors={["#40ffaa", "#4079ff", "#40ffaa"]}
             animationSpeed={3}
@@ -38,7 +39,7 @@ function Header() {
        
         <nav className="hidden md:flex">  
           <ul className="flex items-center space-x-6 text-white">
-            <li><a href="/" className="hover:text-blue-300 transition-colors">Home</a></li>
+            <li><a  href="/#home" className="hover:text-blue-300 transition-colors">Home</a></li>
             <li><a href="/#about" className="hover:text-blue-300 transition-colors">About</a></li>
             <li><a href="/#timeline" className="hover:text-blue-300 transition-colors">Timeline</a></li>
             <li><a href="/#price" className="hover:text-blue-300 transition-colors">Prizes</a></li>
@@ -71,7 +72,7 @@ function Header() {
           <HiX />
         </button>
 
-        <a href="/" onClick={() => setIsMenuOpen(false)} className="text-white text-3xl font-bold">Home</a>
+        <a to="/#home" onClick={() => setIsMenuOpen(false)} className="text-white text-3xl font-bold">Home</a>
         <a href="/#about" onClick={() => setIsMenuOpen(false)} className="text-white text-3xl font-bold">About</a>
         <a href="/#timeline" onClick={() => setIsMenuOpen(false)} className="text-white text-3xl font-bold">Timeline</a>
         <a href="/#price" onClick={() => setIsMenuOpen(false)} className="text-white text-3xl font-bold">Prizes</a>

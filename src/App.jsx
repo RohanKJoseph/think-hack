@@ -13,7 +13,7 @@ function App() {
   }, []);
 
   if (loading) {
-    return <RotatingText texts={['Tink', 'Hack', '2.0', 'Welcome!']} />;
+    return <RotatingText />;
   }
 
   return (

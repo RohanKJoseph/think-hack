@@ -8,9 +8,9 @@ import Shuffle from '../styles/Shuffle.jsx';
 
 const HomePage = () => {
   return (
-    <div className="pointer-events-auto">
+    <div id='home' className="">
       <div className="h-screen flex flex-col items-center justify-center gap-4">
-  <h1 className='text-white text-5xl font-bold text-center'>
+  <h1 className='text-white text-5xl font-bold text-center pointer-events-auto '>
     <Shuffle
   text="Tink Hack 3.0"
   shuffleDirection="right"
