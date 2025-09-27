@@ -1,4 +1,3 @@
-import GlazeButton from "../styles/ShiningButton";
 
 const Prize = () => {
     return (

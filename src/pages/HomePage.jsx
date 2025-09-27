@@ -2,6 +2,7 @@ import React from 'react';
 import Timeline from './TimeLine.jsx';
 import AboutSection from './About.jsx';
 import Prize from './Price.jsx';
+import Contact from './Contact.jsx';
 
 const HomePage = () => {
   return (
@@ -20,6 +21,9 @@ const HomePage = () => {
       <div>
         <Prize />
       </div>
+      <dv>
+        <Contact />
+      </dv>
     </div>
   );
 };
