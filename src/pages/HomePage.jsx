@@ -26,7 +26,7 @@ const HomePage = () => {
 />
     
   </h1>
-  <div className='text-white text-2xl font-semibold text-center'>
+  <div className='text-white text-2xl font-semibold text-center pointer-events-auto'>
     <a href='https://tinkhack-mec.devfolio.co/projects'><button  className='bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-lg transition-colors'>
       Our Work
     </button></a>
