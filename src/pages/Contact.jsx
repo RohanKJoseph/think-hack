@@ -71,7 +71,7 @@ import { motion } from 'framer-motion';
 const Contact = () => {
   return (
     <div id="contact" className="container mx-auto px-4 py-20">
-      <h2 className="text-4xl font-bold text-white text-center mb-12">Our Core Members</h2>
+      <h2 className="text-4xl font-bold text-white text-center mb-12 underline">Our Core Members</h2>
       
        
       <motion.div 

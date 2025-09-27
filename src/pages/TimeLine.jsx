@@ -34,7 +34,7 @@ const timelineData = [
 const Timeline = () => {
   return (
     <div id='timeline' className="container mx-auto px-6 py-12">
-      <h2 className="text-4xl font-bold text-white text-center mb-12">Project Timeline</h2>
+      <h2 className="text-4xl font-bold text-white text-center mb-12 underline">Project Timeline</h2>
       <div className="relative wrap overflow-hidden p-10 h-full">
         
      
@@ -50,7 +50,7 @@ const Timeline = () => {
  
         {timelineData.map((item, index) => (
           <TimelineItem 
-            className="bg-gray-200/20"
+            className="bg-sky-200/20"
             key={index}
             date={item.date}
             title={item.title}
